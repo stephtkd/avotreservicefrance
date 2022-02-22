@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">À Votre Service France</a>
+                        <a class="nav-link active script" aria-current="page" href="#">À Votre Service France</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#presentation">Présentation</a>
@@ -56,6 +56,7 @@
                             <li><a class="dropdown-item" href="#seniors">Aide aux personnes âgées</a></li>
                             <li><a class="dropdown-item" href="#couples">Couples - célibataires</a></li>
                             <li><a class="dropdown-item" href="#entreprise">Créateurs d'entreprise - indépendants</a></li>
+                            <li><a class="dropdown-item" href="#association">Associations</a></li>
                             <li><a class="dropdown-item" href="#pour-tous">Pour tous</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -81,13 +82,16 @@
         </div>
     </nav>
 
-    <div class="container-fluid mt-3 bg-danger" id="presentation">
+    <div class="container-fluid mt-3">
+        <div class="text-center fs-1 script">À Votre Service France - Écrivain public</div>
+    </div>
 
+    <div class="container-fluid mt-3" id="presentation">
         <div class="float-end bg-info mt-4 p-3">
             <div class="card" style="width: 18rem;">
                 <img src="images/christian.jpg" class="card-img-top" alt="Christian Paul">
                 <div class="card-body">
-                    <h5 class="card-title">À Votre Service France</h5>
+                    <h5 class="card-title fs-3 script">À Votre Service France - Écrivain public</h5>
                     <p class="card-text"> Christian Paul Claret
                         <br> SASU <span class="fst-italic">Pour Votre Satisfaction</span><br>RC Niort 884 735 309 00012<br> 4 rue du souterrain <br>79360, Les Fosses<br>
                     </p>
@@ -95,7 +99,7 @@
             </div>
         </div>
 
-        <div class="bg-warning container p-3">
+        <div class="container p-3">
             <h1>Faisons connaissance</h1>
             <p>73 ans, retraité</p>
             <p>
@@ -121,7 +125,7 @@
         </div>
 
 
-        <div class="container bg-success p-3" id="contact">
+        <div class="container p-3" id="contact">
             <p>Pour éviter tous déplacements inutiles, <span class="fw-bold" style="color: red;">je vous accueille uniquement sur rendez vous</span>
             </p>
             <p>Vous pouvez me contacter de 9h à 11h30 et de 14h30 à 18h30 (en cas d'absence ou déjà en ligne, laissez-moi un message. Réponse rapide garantie)</p>
@@ -277,23 +281,64 @@
         </button>
     </div>
 
-    <div class="container-fluid mt-4 bg-success" id="prestations">
-        <div class="container bg-info">
-            <p>
-                <h2>AVOTRESERVICE FRANCE</h2> est là pour vous accompagner dans tous vos projets<br> et répondre à vos besoins par un service personnalisé.
-                <ul>
-                    <li>PARTICULIERS</li>
-                    <li>ETUDIANTS</li>
-                    <li>AU CHOMAGE</li>
-                    <li>COLLECTIVITES</li>
-                    <li>ASSOCIATIONS</li>
-                    <li>PROFESSIONNELS ENTREPRISES CREATION D UNE ENTREPRISE</li>
-                    <li>COUPLES</li>
-                    <li>PERSONNES AGEES</li>
-                    <li>FINANCES PERSONNELLES</li>
-                </ul>
-                <br>
-                <br> VOIR STYLE POUR PRESENTATION https://www.auxcaracteres.com/services
+    <div class="container-fluid mt-4" id="prestations">
+        <div class="container">
+            <h2 class="script fs-2">À Votre Service France - Écrivain public</h2> est là pour vous accompagner dans tous vos projets<br> et répondre à vos besoins par un service personnalisé.
+
+            <div class="row mt-3">
+                <div class="col-4">
+                    <a href="#couples" class="text-decoration-none">
+                        <div class="shadow-lg p-3 mb-5 mx-3 rounded text-center text-light bg-dark">PARTICULIERS</div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#pour-tous" class="text-decoration-none">
+                        <div class="shadow-lg p-3 mb-5 mx-3 rounded text-center text-light bg-dark">ÉTUDIANTS</div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#pour-tous" class="text-decoration-none">
+                        <div class="shadow-lg p-3 mb-5 mx-3 rounded text-center text-light bg-dark">RECHERCHE D'EMPLOI</div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#couples" class="text-decoration-none">
+                        <div class="shadow-lg p-3 mb-5 mx-3 rounded text-center text-light bg-dark">COLLECTIVITÉS</div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#association" class="text-decoration-none">
+                        <div class="shadow-lg p-3 mb-5 mx-3 rounded text-center text-light bg-dark">ASSOCIATIONS</div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#entreprise" class="text-decoration-none">
+                        <div class="shadow-lg p-3 mb-5 mx-3 rounded text-center text-light bg-dark">PROFESSIONNELS - CRÉATION D' ENTREPRISE - INDÉPENDANTS</div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#couples" class="text-decoration-none">
+                        <div class="shadow-lg p-3 mb-5 mx-3 rounded text-center text-light bg-dark">COUPLES</div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#seniors" class="text-decoration-none">
+                        <div class="shadow-lg p-3 mb-5 mx-3 rounded text-center text-light bg-dark">PERSONNES AGÉES</div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#pour-tous" class="text-decoration-none">
+                        <div class="shadow-lg p-3 mb-5 mx-3 rounded text-center text-light bg-dark">FINANCES PERSONNELLES</div>
+                    </a>
+                </div>
+            </div>
+
+            <br>
+            <br> VOIR STYLE POUR PRESENTATION https://www.auxcaracteres.com/services
 
             </p>
         </div>
@@ -406,7 +451,7 @@
 
 
 
-    <div class="container-fluid mt-4 bg-info" id="seniors">
+    <div class="container-fluid mt-4" id="seniors">
         <div class="container">
             <h2>Aide aux personnes âgées</h2>
             <h3>Aide à la gestion de vos finances</h3>
@@ -455,7 +500,7 @@
         </button>
     </div>
 
-    <div class="container-fluid mt-4 bg-info" id="couples">
+    <div class="container-fluid mt-4" id="couples">
         <div class="container">
             <h2>Couples - Célibataires</h2>
             <p>
@@ -490,7 +535,7 @@
         </button>
     </div>
 
-    <div class="container-fluid mt-4 bg-info" id="entreprise">
+    <div class="container-fluid mt-4" id="entreprise">
         <div class="container">
 
             <h2>Création d'entreprise</h2>
@@ -513,7 +558,7 @@
                 </ul>
             </p>
 
-            <p>Possibilité d'accompagnement pendant les 12 permiers mois de votre entreprise
+            <p>Possibilité d'accompagnement pendant les 12 permiers mois de votre entreprise</p>
 
         </div>
         <button type="button" class="btn btn-primary top" onclick="window.location.href='#';">
@@ -521,7 +566,37 @@
         </button>
     </div>
 
-    <div class="container-fluid mt-4 bg-info" id="pour-tous">
+    <div class="container-fluid mt-4" id="association">
+        <div class="container">
+
+            <h2>Associations</h2>
+            <p>
+                Vous êtes président, secrétaire, trésorier d'une petite ou grande association ?
+
+            </p>
+            <p>
+                En qualité d'ex-directeur financier, juridique, et ressources humaines, je vous accompagne dans toutes les étapes de la gestion de votre association :
+                <ul>
+                    <li>Brochure d'inscription</li>
+                    <li>assemblée générale</li>
+                    <li>compte-rendu d'assemblée générale</li>
+                    <li>Bilan financier</li>
+                    <li>Budget prévisionnel</li>
+                    <li>Demande de subventions</li>
+                    <li>gestion des salariés</li>
+                    <li>établissement d'une fiche de paye</li>
+                </ul>
+            </p>
+
+            <p>Possibilité d'accompagnement</p>
+
+        </div>
+        <button type="button" class="btn btn-primary top" onclick="window.location.href='#';">
+            <svg width="32" height="32"><use xlink:href="#top"/></svg>
+        </button>
+    </div>
+
+    <div class="container-fluid mt-4" id="pour-tous">
         <div class="container">
             <h2>Gérer ses finances personnelles</h2>
             <p>
@@ -561,7 +636,7 @@
     </div>
 
 
-    <div class="container-fluid mt-4 bg-info" id="charte">
+    <div class="container-fluid mt-4" id="charte">
         <div class="container">
             <h1>Charte déontologique</h1>
 
