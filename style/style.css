@@ -7,9 +7,30 @@ html {
     src: url(../font/Photograph-Signature.ttf);
 }
 
+@font-face {
+    font-family: craie;
+    src: url(../font/RafflesBryantRegular.ttf);
+}
+
 .top {
     margin-left: 90%;
 }
+
+.titre {
+    animation: titre 3s ease 0s 1 normal forwards;
+}
+
+@keyframes titre {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 .script {
     font-family: myFirstFont;
@@ -17,6 +38,41 @@ html {
 }
 
 .ardoise {
-    background: url('../images/ardoisesm.png') center/contain no-repeat;
-    height: 160px;
+    /* background: url('../images/ardoisesm.png') center/contain no-repeat; */
+    /* max-width: 350px; */
+    /* height: 150px; */
+    /* background-color: red; */
+    /* display: block; */
+}
+
+.contenant img:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.contenant {
+    position: relative;
+    text-align: center;
+    /* background-color: yellow; */
+
+}
+
+.contenant img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.contenant a {
+    font-size: 1.2em;
+    font-family: craie;
+    letter-spacing: 0.4em;
+    line-height: 1.8;
+}
+
+.texte_centre_sur_image {
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
 }
