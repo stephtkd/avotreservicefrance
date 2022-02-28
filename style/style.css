@@ -3,7 +3,7 @@ html {
 }
 
 @font-face {
-    font-family: myFirstFont;
+    font-family: JoliCursif;
     src: url(../font/Photograph-Signature.ttf);
 }
 
@@ -16,25 +16,33 @@ html {
     margin-left: 90%;
 }
 
-.titre {
+.anim_titre {
     animation: titre 3s ease 0s 1 normal forwards;
+}
+
+#plume {
+    height: 1.5em;
 }
 
 @keyframes titre {
     0% {
-      opacity: 0;
-      transform: translateX(-250px);
+        opacity: 0;
+        transform: translateX(-250px);
     }
-  
     100% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
+}
 
 .script {
-    font-family: myFirstFont;
+    font-family: JoliCursif;
     font-size: 130%;
+}
+
+.card {
+    border-color: #F2AE89;
+    border-width: 1em;
 }
 
 .ardoise {
@@ -43,23 +51,20 @@ html {
     /* height: 150px; */
     /* background-color: red; */
     /* display: block; */
+    border-radius: 0.75em;
+    width: 100%;
+    max-width: 300px;
 }
 
-.contenant img:hover {
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+.ardoise:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .contenant {
     position: relative;
     text-align: center;
     /* background-color: yellow; */
-
-}
-
-.contenant img {
-    width: 100%;
-    max-width: 300px;
 }
 
 .contenant a {
@@ -71,8 +76,42 @@ html {
 
 .texte_centre_sur_image {
     position: absolute;
-     top: 50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color: #f8eae3;
+    border-radius: 1em;
+}
+
+#titre-senior {
+    width: 100%;
+    height: 300px;
+    background: url("../images/open-book.jpg") center center/cover;
+}
+
+#titre-entreprise {
+    width: 100%;
+    height: 300px;
+    background: url("../images/digital-marketing.jpg") center center/cover;
+}
+
+#titre-couple {
+    width: 100%;
+    height: 300px;
+    background: url("../images/man-writing.jpg") center center/cover;
+}
+
+#titre-association {
+    width: 100%;
+    height: 300px;
+    background: url("../images/computer.jpg") center center/cover;
+}
+
+#titre-quotidien {
+    width: 100%;
+    height: 300px;
+    background: url("../images/student.jpg") center center/cover;
 }
