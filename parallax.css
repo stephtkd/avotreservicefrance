@@ -1,0 +1,23 @@
+.parallax {
+    /* The image used */
+    background-image: url("https://placekitten.com/g/900/700");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+
+
+/* .bg1::after {
+    background-image: url("https://placekitten.com/g/900/700");
+}
+
+.bg2::after {
+    background-image: url("https://placekitten.com/g/800/600");
+} */

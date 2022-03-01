@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Dropdown Example</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="parallax.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Parallax</title>
 </head>
 
 <body>
-    <div class="container mt-3">
-        <h4 class="mb-1">Collapse Example</h4>
-
-        <a class="btn btn-link" href="#" data-toggle="collapse" data-target="#target1">
-             What is Lorem Ipsum?
-         </a>
-        <div id="target1" class="collapse">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ...
-        </div>
-
-        <br><br>
-
-        <button class="btn" data-toggle="collapse" data-target="#target2">
-             Why do we use it?
-         </button>
-        <div id="target2" class="collapse">
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <main class="wrapper">
+        <section class="section parallax bg1">
+            <h1>Cute Kitten</h1>
+        </section>
+        <section class="section static">
+            <h1>Boring</h1>
+        </section>
+        <section class="section parallax bg2">
+            <h1>Fluffy Kitten</h1>
+        </section>
+    </main>
 </body>
 
 </html>

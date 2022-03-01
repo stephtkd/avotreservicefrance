@@ -2,6 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* ********** Polices ********* */
+
 @font-face {
     font-family: JoliCursif;
     src: url(../font/Photograph-Signature.ttf);
@@ -12,17 +15,8 @@ html {
     src: url(../font/RafflesBryantRegular.ttf);
 }
 
-.top {
-    margin-left: 90%;
-}
 
-.anim_titre {
-    animation: titre 3s ease 0s 1 normal forwards;
-}
-
-#plume {
-    height: 1.5em;
-}
+/* ******** Animations ******** */
 
 @keyframes titre {
     0% {
@@ -33,6 +27,26 @@ html {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+/* *** Titre *** */
+
+#main_title {
+    animation: titre 3s ease 0s 1 normal forwards;
+    font-family: JoliCursif;
+    text-align: center;
+    font-size: 130%;
+}
+
+.top {
+    margin-left: 90%;
+}
+
+.anim_titre {}
+
+#plume {
+    height: 1.5em;
 }
 
 .script {
@@ -82,36 +96,43 @@ html {
 }
 
 .container {
-    background-color: #f8eae3;
+    background-color: #f8f0ec;
     border-radius: 1em;
 }
 
 #titre-senior {
-    width: 100%;
-    height: 300px;
-    background: url("../images/open-book.jpg") center center/cover;
+    background-image: url("../images/open-book.jpg");
 }
 
 #titre-entreprise {
-    width: 100%;
-    height: 300px;
-    background: url("../images/digital-marketing.jpg") center center/cover;
+    background-image: url("../images/digital-marketing.jpg");
 }
 
 #titre-couple {
-    width: 100%;
-    height: 300px;
-    background: url("../images/man-writing.jpg") center center/cover;
+    background-image: url("../images/man-writing.jpg");
 }
 
 #titre-association {
-    width: 100%;
-    height: 300px;
-    background: url("../images/computer.jpg") center center/cover;
+    background-image: url("../images/computer.jpg");
 }
 
 #titre-quotidien {
-    width: 100%;
+    background-image: url("../images/student.jpg");
+}
+
+.titre_rubrique {
+    /* Set a specific height */
     height: 300px;
-    background: url("../images/student.jpg") center center/cover;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 1px 1px 20px black, 0 0 1em rgb(241, 220, 101), 0 0 0.2em rgb(241, 220, 101);
+    color: white;
 }
