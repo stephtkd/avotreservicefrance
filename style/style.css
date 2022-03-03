@@ -62,8 +62,27 @@ html {
     box-shadow: 5px 5px 10px 1px #585858;
 }
 
-.top {
-    margin-right: 1em;
+.bouton {
+    background-color: #F2AE89;
+    border-color: #f1a378;
+    color: rgb(112, 111, 111);
+    border-radius: 0.25em;
+    padding: .375rem .75rem;
+}
+
+.bouton:hover {
+    color: rgb(112, 111, 111);
+    background-color: #f1c0a5;
+    border-color: #f0b595;
+}
+
+.btn-top {
+    display: block;
+    float: right;
+}
+
+#formContact {
+    display: none;
 }
 
 .ardoise {
