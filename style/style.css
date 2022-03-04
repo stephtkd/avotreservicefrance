@@ -77,8 +77,8 @@ html {
 }
 
 .btn-top {
-    display: block;
-    float: right;
+    position: absolute;
+    right: 0;
 }
 
 #formContact {
