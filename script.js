@@ -34,11 +34,11 @@ const options = {
 
 const handleIntersectArdoise = function(entries, observer) {
     entries.forEach(function(entry) {
-        console.log(entry.intersectionRatio);
+        // console.log(entry.intersectionRatio);
         if (entry.intersectionRatio > ratio) {
             entry.target.classList.add('ardoise-animation')
             observer.unobserve(entry.target)
-            console.log('ok');
+                // console.log('ok');
         }
     })
 }

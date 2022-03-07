@@ -10,8 +10,9 @@
         content="À Votre Service France - Ecrivain publique. Je crée tous vos documents pour vous sur toute la France." />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" -->
+        <!-- integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+        <link href="./style/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="style/style.css" rel="stylesheet" type="text/css">
 
     <title>À Votre Service France</title>
@@ -173,6 +174,9 @@
 
         <div id="formContact">
             <?php
+            ini_set('display_errors', 1);
+            error_reporting(E_ALL);
+            ini_set("error_log","error_php.txt");
                     if (isset($_POST['demande'])) {
                         $entete  = 'MIME-Version: 1.0' . "\r\n";
                         $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -196,11 +200,12 @@
                 
                         
                         $message = '<h1>Message envoyé depuis la page Contact de avotreservicefrance.fr</h1>
-                        <p><b>Email : </b>' . $_POST['email'] . '</p><br>
-                        <p><b>Téléphone : </b>' . $_POST['telephone'] . '</p><br>
-                        <p><b>Préférence de rappel : </b>' . $jour . '</p><br>
-                        <p><b>et heure : </b>' . $heure . '</p><br>
-                        <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
+                        <p><b>de la part de :</b> ' . $_POST['nom'] . '</p>
+                        <p><b>Email : </b>' . $_POST['email'] . '</p>
+                        <p><b>Téléphone : </b>' . $_POST['telephone'] . '</p>
+                        <p><b>Préférence de rappel : </b>' . $jour . '</p>
+                        <p><b>et heure : </b>' . $heure . '</p>
+                        <b>Message : </b>' . htmlspecialchars($_POST['demande']) . '</p>';
                 
                         $retour = mail('stephtkd@yahoo.fr', 'Demande à votre service France', $message, $entete);
                         if($retour)
@@ -212,17 +217,17 @@
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nom" class="form-label">Nom</label>
-                            <input type="text" minlength="3" class="form-control" id="nom" aria-describedby="nomHelp">
+                            <input type="text" minlength="3" class="form-control" id="nom" name="nom" aria-describedby="nomHelp">
                             <div id="nomHelp" class="form-text">Les données sont strictement confidentielles</div>
                         </div>
                         <div class="mb-3">
                             <label for="telephone" class="form-label">Téléphone</label>
-                            <input type="tel" class="form-control" id="telephone" aria-describedby="telHelp">
+                            <input type="tel" class="form-control" id="telephone" name="telephone" aria-describedby="telHelp">
                             <div id="telHelp" class="form-text">Utilisé pour vous contacter</div>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Adresse mail</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="adresseHelp"
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="adresseHelp"
                                 placeholder="nom@exemple.com">
                             <div id="adresseHelp" class="form-text">Utilisé pour vous contacter</div>
                         </div>
@@ -235,50 +240,50 @@
                     <div class="col-6">
 
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="lundi">
+                            <input type="checkbox" class="form-check-input" id="lundi" name="lundi">
                             <label class="form-check-label" for="lundi">Lundi</label>
                         </div>
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="mardi">
+                            <input type="checkbox" class="form-check-input" id="mardi" name="mardi">
                             <label class="form-check-label" for="mardi">Mardi</label>
                         </div>
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="mercredi">
+                            <input type="checkbox" class="form-check-input" id="mercredi" name="mercredi">
                             <label class="form-check-label" for="mercredi">Mercredi</label>
                         </div>
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="jeudi">
+                            <input type="checkbox" class="form-check-input" id="jeudi" name="jeudi">
                             <label class="form-check-label" for="jeudi">Jeudi</label>
                         </div>
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="vendredi">
+                            <input type="checkbox" class="form-check-input" id="vendredi" name="vendredi">
                             <label class="form-check-label" for="vendredi">Vendredi</label>
                         </div>
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="samedi">
+                            <input type="checkbox" class="form-check-input" id="samedi" nae="samedi">
                             <label class="form-check-label" for="samedi">Samedi</label>
                         </div>
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="dimanche">
+                            <input type="checkbox" class="form-check-input" id="dimanche" name="dimanche">
                             <label class="form-check-label" for="dimanche">Dimanche</label>
                         </div>
                     </div>
 
                     <div class="col-6">
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="9-12">
+                            <input type="checkbox" class="form-check-input" id="9-12" name="9-12">
                             <label class="form-check-label" for="9-12">9h - 12h</label>
                         </div>
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="12-14">
+                            <input type="checkbox" class="form-check-input" id="12-14" name="12-14">
                             <label class="form-check-label" for="12-14">12h - 14h</label>
                         </div>
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="14-18">
+                            <input type="checkbox" class="form-check-input" id="14-18" name="14-18">
                             <label class="form-check-label" for="14-18">14h - 18h</label>
                         </div>
                         <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="18-20">
+                            <input type="checkbox" class="form-check-input" id="18-20" name="18-20">
                             <label class="form-check-label" for="18-20">18h - 20h</label>
                         </div>
                     </div>
@@ -286,7 +291,7 @@
                 <div class="row justify-content-md-center">
                     <div class="col-6">
                         <label for="demande" class="form-label">Votre demande</label>
-                        <textarea class="form-control" id="demande" aria-describedby="demandeHelp"></textarea>
+                        <textarea class="form-control" id="demande" aria-describedby="demandeHelp" name="demande"></textarea>
                         <div id="demandeHelp" class="form-text">Décrivez votre besoin</div>
 
                         <button type="submit" class="bouton mt-2">Envoyer</button>
