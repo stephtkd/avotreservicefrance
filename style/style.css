@@ -208,23 +208,23 @@ h2 {
     border-radius: 1em;
 }
 
-#titre-senior {
+#seniors {
     background-image: url("../images/open-book.jpg");
 }
 
-#titre-entreprise {
+#entreprise {
     background-image: url("../images/digital-marketing.jpg");
 }
 
-#titre-couple {
+#couples {
     background-image: url("../images/man-writing.jpg");
 }
 
-#titre-association {
+#association {
     background-image: url("../images/computer.jpg");
 }
 
-#titre-quotidien {
+#pour-tous {
     background-image: url("../images/student.jpg");
 }
 
@@ -238,4 +238,13 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 4rem 0 2rem 0;
+    position: relative;
+}
+
+.titre_rubrique h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
 }
