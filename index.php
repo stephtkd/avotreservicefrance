@@ -95,7 +95,7 @@
                 <h5 class="card-title fs-3 script">À Votre Service France - Écrivain public</h5>
                 <p class="card-text"> Christian Paul Claret
                     <br> SASU <span class="fst-italic">Pour Votre Satisfaction</span><br>RC Niort 884 735 309 00012
-                    <br> 4 rue du souterrain <br>79360, Les Fosses<br>
+                    <br> 4 rue du souterrain <br>79360, Les Fosses<br><a href="mailto:contact@avotreservicefrance.fr">contact@avotreservicefrance.fr</a>
                 </p>
             </div>
         </div>
@@ -164,6 +164,8 @@
                     <path
                         d="M4.671 0c.88 0 1.733.247 2.468.702a7.423 7.423 0 0 1 6.02 2.118 7.372 7.372 0 0 1 2.167 5.215c0 .344-.024.687-.072 1.026a4.662 4.662 0 0 1 .6 2.281 4.645 4.645 0 0 1-1.37 3.294A4.673 4.673 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.423 7.423 0 0 1-6.114-2.107A7.374 7.374 0 0 1 .529 8.035c0-.363.026-.724.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7.07 7.07 0 0 0 1.257.653c.492.205.873.38 1.145.523.229.112.437.264.615.448.135.142.21.331.21.528a.872.872 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.618 2.618 0 0 1-1.048-.206 11.44 11.44 0 0 1-.532-.253 1.284 1.284 0 0 0-.587-.15.717.717 0 0 0-.501.176.63.63 0 0 0-.195.491.796.796 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.113 5.113 0 0 0 2.212.419 4.554 4.554 0 0 0 1.624-.265 2.296 2.296 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.09 2.09 0 0 0-.279-1.101 2.53 2.53 0 0 0-.772-.792A7.198 7.198 0 0 0 8.486 7.3a1.05 1.05 0 0 0-.145-.058 18.182 18.182 0 0 1-1.013-.447 1.827 1.827 0 0 1-.54-.387.727.727 0 0 1-.2-.508.805.805 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096.274.079.542.177.802.293.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.69.69 0 0 0 .18-.496.717.717 0 0 0-.17-.476 1.374 1.374 0 0 0-.556-.354 3.69 3.69 0 0 0-.708-.183 5.963 5.963 0 0 0-1.022-.078 4.53 4.53 0 0 0-1.536.258 2.71 2.71 0 0 0-1.174.784 1.91 1.91 0 0 0-.45 1.287c-.01.37.076.736.25 1.063z" />
                 </svg></li>
+            <li>ou par mail : <a href="mailto:contact@avotreservicefrance.fr">contact@avotreservicefrance.fr</a></li>
+
         </ul>
         </p>
         <p>
@@ -214,8 +216,8 @@
                     ?>
             <form method="post">
                 <div class="row justify-content-md-center">
-                    <div class="col-6">
-                        <div class="mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-md-3">
                             <label for="nom" class="form-label">Nom</label>
                             <input type="text" minlength="3" class="form-control" id="nom" name="nom" aria-describedby="nomHelp">
                             <div id="nomHelp" class="form-text">Les données sont strictement confidentielles</div>
@@ -237,7 +239,7 @@
                     Meilleur moment pour vous contacter :
                     <div class="row justify-content-md-center">
 
-                    <div class="col-6">
+                    <div class="col-md-6">
 
                         <div class="mb-1 form-check">
                             <input type="checkbox" class="form-check-input" id="lundi" name="lundi">
@@ -269,7 +271,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="mb-1 form-check">
                             <input type="checkbox" class="form-check-input" id="9-12" name="9-12">
                             <label class="form-check-label" for="9-12">9h - 12h</label>
@@ -289,8 +291,8 @@
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
-                    <div class="col-6">
-                        <label for="demande" class="form-label">Votre demande</label>
+                    <div class="col-md-6">
+                        <label for="demande" class="form-label">Objet de votre demande</label>
                         <textarea class="form-control" id="demande" aria-describedby="demandeHelp" name="demande"></textarea>
                         <div id="demandeHelp" class="form-text">Décrivez votre besoin</div>
 
@@ -701,6 +703,63 @@
     </div>
 
 
+    <div class="container" id="avis">
+        <h2>Derniers avis</h2>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+                D'Isabelle et Francis H.
+                Nous tenons Christian Paul à vous remercier du temps passé avec nous par votre "grande "écoute
+                et vos conseils " perspicaces " alors que notre couple comme on dit " battez de l'aile"
+                Vous nous avez réussi à nous faire comprendre les raisons " personnelles " , nous parlez avec franchise
+                pour notre bien et grâce à vous nous avons trouvé les solutions pas toujours facile surtout quand elles sont liées à la sexualité
+                Merci de votre compréhension
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                de Pierre G.
+Suite à ma demande de lancer ma propre affaire en plomberie chauffagiste , vous avez étudié la validité de mon projet ,puis réaliser mon business plan demandé par ma banque (également me conseiller sur les argumentaires à défendre auprès de mon banquier qui m'a félicité sur l'analyse de mon business plan)
+Vous avez réaliser le projet de mes statuts de SAS pour un coût plus que raisonnable ( vous savez par votre expérience quand on se lance qu'il faut minimiser les frais )
+J' ai ainsi obtenu auprès de ma banque un prêt de 50 000 euros
+De plus j'apprécie pour un coût modique mensuel que vous suivez la gestion de mon affaire pendant les 12 premiers mois pour éviter les erreurs avec le calcul de mes marges et les coûts d'exploitation de ma société
+Merci Christian Paul
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                De Carole S.
+Christian Paul merci de votre efficacité , en effet suite à mon hospitalisation importante ( AVC )
+grâce à une amie je vous ai consulté et grâce à vos compétences vous avez en effet réussi à :
+Sur la gestion de mon compte bancaire obtenu l annulation de prélèvements qui courait depuis longtemps auprès de ma banque tels que assurance d un scooter que je n avais plus depuis plus de 10 ans , assurance d un mobil-homme détruit depuis plus de 8 ans , diverses assurances et autres prélévements y  compris depuis BOUYGUES TELECOM ( percevez deux fois l'abonnement ) et autres ......ce qui a permis d'obtenir mensuellement une moins value de 275 euros
+Vous avez également réussi à m 'obtenir un remboursement de 2450 euros auprès de la compagnie des eaux et de 850 euros auprès de la compagnie d'électricité ( ayant été absent pendant deux ans de mon domicile pour les raisons de santé évoquées ci dessus ) les compagnies me facturées sur la base de non relevé de compteur , des VALEURS ESTIMÉES AVEC un PRELEVEMENT AUTOMATIQUE  ( Vous avez demandé l'intervention de ces deux compagnies qui ont reconnues que les valeurs estimées étaient très très supérieures à la réalité
+Merci je vous recommanderais auprès de mes relations
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+<button type="button" class="bouton btn-top">
+    <svg width="32" height="32">
+        <use xlink:href="#top" />
+    </svg>
+</button>
+    </div>
+
+    
     <div class="container" id="charte">
         <h2>Charte déontologique</h2>
 
@@ -762,6 +821,7 @@
             </svg>
         </button>
     </div>
+
 
 
     <!-- Optional JavaScript; choose one of the two! -->
