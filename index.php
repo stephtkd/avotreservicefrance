@@ -153,7 +153,7 @@
             <div class="card-body">
                 <h5 class="card-title fs-3 script">À Votre Service France - Écrivain public</h5>
                 <p class="card-text"> Christian Paul Claret
-                    <br> SASU <span class="fst-italic">Pour Votre Satisfaction</span><br>RC Niort 884 735 309 00012
+                    <br> Sasu <span class="fst-italic">Pour Votre Satisfaction</span><br>RC Niort 884 735 309 00012
                     <br> 4 rue du souterrain <br>79360, Les Fosses<br>
                 </p>
             </div>
@@ -239,7 +239,7 @@
                     <div class="row justify-content-md-center">
                         <div class="col-md-6">
                             <div class="mb-md-3">
-                                <label for="nom" class="form-label">Nom</label>
+                                <label for="nom" class="form-label">Nom Prénom</label>
                                 <input type="text" minlength="3" class="form-control" id="nom" name="nom" aria-describedby="nomHelp" required>
                                 <div id="nomHelp" class="form-text">Les données sont strictement confidentielles</div>
                             </div>
