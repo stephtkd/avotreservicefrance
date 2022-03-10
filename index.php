@@ -91,7 +91,7 @@
                 <h5 class="card-title fs-3 script">À Votre Service France - Écrivain public</h5>
                 <p class="card-text"> Christian Paul Claret
                     <br> SASU <span class="fst-italic">Pour Votre Satisfaction</span><br>RC Niort 884 735 309 00012
-                    <br> 4 rue du souterrain <br>79360, Les Fosses<br><a href="mailto:contact@avotreservicefrance.fr">contact@avotreservicefrance.fr</a>
+                    <br> 4 rue du souterrain <br>79360, Les Fosses<br>
                 </p>
             </div>
         </div>
@@ -118,6 +118,10 @@
         <p>
             Et, bien sûr, une facture vous sera remise à l’issue de notre collaboration.
         </p>
+
+        <!-- Si nous cultivons l'habitude de rendre service, notre désir de servir s'accroîtra sans cesse et contribuera non seulement à notre propre bonheur, mais aussi au bonheur du monde en général. 
+Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
+
     </div>
 
     <div class="container" id="contact">
@@ -224,8 +228,7 @@
                     Meilleur moment pour vous contacter :
                     <div class="row justify-content-md-center">
 
-                        <div class="col-md-6">
-
+                        <div class="col-6">
                             <div class="mb-1 form-check">
                                 <input type="checkbox" class="form-check-input" id="lundi" name="lundi">
                                 <label class="form-check-label" for="lundi">Lundi</label>
@@ -256,7 +259,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-6">
                             <div class="mb-1 form-check">
                                 <input type="checkbox" class="form-check-input" id="9-12" name="9-12">
                                 <label class="form-check-label" for="9-12">9h - 12h</label>
@@ -275,7 +278,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-md-center">
+                    <div class="row justify-content-md-center mt-2">
                         <div class="col-md-6">
                             <label for="demande" class="form-label">Objet de votre demande</label>
                             <textarea class="form-control" id="demande" aria-describedby="demandeHelp" name="demande"></textarea>
@@ -303,45 +306,44 @@
         <h2>Toutes les prestations</h2>
         <span class="script fs-2">À Votre Service France - Écrivain public</span> est là pour vous accompagner dans tous vos projets<br> et répondre à vos besoins par un service personnalisé.
 
-        <div class="row mt-3">
-            <div class="col-md-4 ardoise-contenant delai-1">
+        <div class="row ">
+            <div class="col-md-4 col-6 mt-3 ardoise-contenant delai-1">
                 <a href="#couples" class="text-light lien-ardoise">
                     <img src="./images/ardoisesm.png" alt="ardoise" class="ardoise-img">
                     <span class="texte-ardoise">PARTICULIERS -<br>COUPLES</span></a>
                 <!-- 350x240 -->
             </div>
-            <div class="col-md-4 ardoise-contenant delai-2">
+            <div class="col-md-4 col-6 mt-3 ardoise-contenant delai-2">
                 <a href="#seniors" class="text-light lien-ardoise">
                     <img src="./images/ardoisesm.png" alt="ardoise" class="ardoise-img">
                     <span class="texte-ardoise">PERSONNES AGÉES</span></a>
                 <!-- 350x240 -->
             </div>
-            <div class="col-md-4 ardoise-contenant delai-3">
+            <div class="col-md-4 col-6 mt-3 ardoise-contenant delai-3">
                 <a href="#pour-tous" class="text-light lien-ardoise">
                     <img src="./images/ardoisesm.png" alt="ardoise" class="ardoise-img"><span class="texte-ardoise">FINANCES PERSONNELLES</span></a>
                 <!-- 350x240 -->
             </div>
-        </div>
 
-        <div class="row mt-3">
-            <div class="col-md-4 ardoise-contenant delai-1">
+            <div class="col-md-4 col-6 mt-3 ardoise-contenant delai-1">
                 <a href="#pour-tous" class="text-light lien-ardoise">
                     <img src="./images/ardoisesm.png" alt="ardoise" class="ardoise-img">
                     <span class="texte-ardoise">ÉTUDIANTS -<br>RECHERCHE D'EMPLOI</span></a>
                 <!-- 350x240 -->
             </div>
-            <div class="col-md-4 ardoise-contenant delai-2">
+            <div class="col-md-4 col-6 mt-3 ardoise-contenant delai-2">
                 <a href="#association" class="text-light lien-ardoise">
                     <img src="./images/ardoisesm.png" alt="ardoise" class="ardoise-img"><span class="texte-ardoise">ASSOCIATIONS -<br>COLLECTIVITÉS</span></a>
                 <!-- 350x240 -->
             </div>
-            <div class="col-md-4 ardoise-contenant delai-3">
+            <div class="col-md-4 col-6 mt-3 ardoise-contenant delai-3">
                 <a href="#entreprise" class="text-light lien-ardoise">
                     <img src="./images/ardoisesm.png" alt="ardoise" class="ardoise-img">
                     <span class="texte-ardoise">PROFESSIONNELS -<br>INDÉPENDANTS</span></a>
                 <!-- 350x240 -->
             </div>
         </div>
+
         <button type="button" class="bouton btn-top">
             <svg width="32" height="32">
                 <use xlink:href="#top" />
@@ -423,6 +425,7 @@
         </table>
 
         <p>
+            <img src="./images/urgent.png" alt="urgent" width="75px;">
             <span class="fw-bold">Majoration travaux urgents</span> :
             <ul>
                 <li>25 % de majoration pour un travail à réaliser dans la journée</li>
@@ -656,41 +659,51 @@
         <h2>Derniers avis</h2>
 
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active ">
+                <div class="carousel-item active" data-bs-interval="6000">
                     <div class="row justify-content-md-center">
                         <div class="avis col-md-9">
-                            D'Isabelle et Francis H.<br> Nous tenons Christian Paul à vous remercier du temps passé avec nous par votre "grande "écoute et vos conseils " perspicaces " alors que notre couple comme on dit " battez de l'aile" Vous nous avez
-                            réussi à nous faire comprendre les raisons " personnelles " , nous parlez avec franchise pour notre bien et grâce à vous nous avons trouvé les solutions pas toujours facile surtout quand elles sont liées à la sexualité Merci
-                            de votre compréhension
+                            De Pierre G.<br> "Suite à ma demande de lancer ma propre affaire en plomberie chauffagiste , vous avez étudié la validité de mon projet ,puis réaliser mon business plan demandé par ma banque (également me conseiller sur les
+                            argumentaires à défendre auprès de mon banquier qui m'a félicité sur l'analyse de mon business plan)
+                            <br> Vous avez réaliser le projet de mes statuts de SAS pour un coût plus que raisonnable ( vous savez par votre expérience quand on se lance qu'il faut minimiser les frais ) J' ai ainsi obtenu auprès de ma banque un prêt de
+                            50 000 euros.
+                            <br> De plus j'apprécie pour un coût modique mensuel que vous suivez la gestion de mon affaire pendant les 12 premiers mois pour éviter les erreurs avec le calcul de mes marges et les coûts d'exploitation de ma société <br>                            Merci Christian Paul"
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="6000">
                     <div class="row justify-content-md-center">
                         <div class="avis col-md-9">
-                            <img src="..." class="d-block w-100" alt="..."> de Pierre G.<br> Suite à ma demande de lancer ma propre affaire en plomberie chauffagiste , vous avez étudié la validité de mon projet ,puis réaliser mon business plan demandé
-                            par ma banque (également me conseiller sur les argumentaires à défendre auprès de mon banquier qui m'a félicité sur l'analyse de mon business plan) Vous avez réaliser le projet de mes statuts de SAS pour un coût plus que raisonnable
-                            ( vous savez par votre expérience quand on se lance qu'il faut minimiser les frais ) J' ai ainsi obtenu auprès de ma banque un prêt de 50 000 euros De plus j'apprécie pour un coût modique mensuel que vous suivez la gestion
-                            de mon affaire pendant les 12 premiers mois pour éviter les erreurs avec le calcul de mes marges et les coûts d'exploitation de ma société Merci Christian Paul
+                            De Carole S.<br> "Christian Paul merci de votre efficacité. En effet suite à mon hospitalisation importante ( AVC ) grâce à une amie je vous ai consulté et grâce à vos compétences vous avez en effet réussi à : Sur la gestion
+                            de mon compte bancaire obtenir l annulation de prélèvements qui courait depuis longtemps auprès de ma banque tels que assurance d un scooter que je n avais plus depuis plus de 10 ans , assurance d un mobil-homme détruit depuis
+                            plus de 8 ans , diverses assurances et autres prélévements y compris depuis BOUYGUES TELECOM ( percevez deux fois l'abonnement ) et autres ......ce qui a permis d'obtenir mensuellement une moins value de 275 euros<br> Vous
+                            avez également réussi à m 'obtenir un remboursement de 2450 euros auprès de la compagnie des eaux et de 850 euros auprès de la compagnie d'électricité ( ayant été absent pendant deux ans de mon domicile pour les raisons de
+                            santé évoquées ci dessus ) les compagnies me facturées sur la base de non relevé de compteur , des VALEURS ESTIMÉES AVEC un PRELEVEMENT AUTOMATIQUE ( Vous avez demandé l'intervention de ces deux compagnies qui ont reconnues
+                            que les valeurs estimées étaient très très supérieures à la réalité<br> Merci je vous recommanderais auprès de mes relations"
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="6000">
                     <div class="row justify-content-md-center">
                         <div class="avis col-md-9">
-                            <img src="..." class="d-block w-100" alt="..."> De Carole S.<br> Christian Paul merci de votre efficacité , en effet suite à mon hospitalisation importante ( AVC ) grâce à une amie je vous ai consulté et grâce à vos compétences
-                            vous avez en effet réussi à : Sur la gestion de mon compte bancaire obtenu l annulation de prélèvements qui courait depuis longtemps auprès de ma banque tels que assurance d un scooter que je n avais plus depuis plus de 10
-                            ans , assurance d un mobil-homme détruit depuis plus de 8 ans , diverses assurances et autres prélévements y compris depuis BOUYGUES TELECOM ( percevez deux fois l'abonnement ) et autres ......ce qui a permis d'obtenir mensuellement
-                            une moins value de 275 euros Vous avez également réussi à m 'obtenir un remboursement de 2450 euros auprès de la compagnie des eaux et de 850 euros auprès de la compagnie d'électricité ( ayant été absent pendant deux ans de
-                            mon domicile pour les raisons de santé évoquées ci dessus ) les compagnies me facturées sur la base de non relevé de compteur , des VALEURS ESTIMÉES AVEC un PRELEVEMENT AUTOMATIQUE ( Vous avez demandé l'intervention de ces
-                            deux compagnies qui ont reconnues que les valeurs estimées étaient très très supérieures à la réalité Merci je vous recommanderais auprès de mes relations
+                            De Céline et Stéphane B.<br> "Merci Christian de nous avoir aidé à construire le Business Plan de notre future entreprise. Un vrai coup de pouce et une aide très précieuse lorsqu'on démarre dans l'entreprenariat et qu'on n'a
+                            pas toutes les compétences dès le début. Nous referons appel à vous sans soucis.<br>Merci"
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <div class="row justify-content-md-center">
+                        <div class="avis col-md-9">
+                            D'Isabelle et Francis H.<br> "Nous tenons Christian Paul à vous remercier du temps passé avec nous par votre "grande "écoute et vos conseils " perspicaces " alors que notre couple comme on dit " battez de l'aile" Vous nous
+                            avez réussi à nous faire comprendre les raisons " personnelles " , nous parlez avec franchise pour notre bien et grâce à vous nous avons trouvé les solutions pas toujours facile surtout quand elles touchent au coeur du couple.
+                            <br>Merci de votre compréhension"
                         </div>
                     </div>
                 </div>
