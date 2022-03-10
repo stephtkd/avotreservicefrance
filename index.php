@@ -70,19 +70,82 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#avis">Avis</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#charte">Charte</a>
                     </li>
                 </ul>
-                <!--                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>-->
             </div>
         </div>
     </nav>
 
     <div id="main_title">À Votre Service France - Écrivain public <img src="./images/plume.jpg" alt="plume" id="plume">
     </div>
+
+    <?php
+            ini_set("error_log","/home/jkot8146/sites/avotreservicefrance.prod/error_php.txt");
+            if (isset($_POST['demande'])) {
+                $entete  = 'MIME-Version: 1.0' . "\r\n";
+                $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                $entete .= 'From: contact@avotreservicefrance.fr' . "\r\n";
+                $entete .= 'Reply-to: ' . $_POST['email'];
+        
+                $jour="";
+                if (isset($_POST['lundi'])) {
+                    $jour="$jour lundi";
+                }
+                if (isset($_POST['mardi'])) {
+                    $jour="$jour mardi";
+                }
+                if (isset($_POST['mercredi'])) {
+                    $jour="$jour mercredi";
+                }
+                if (isset($_POST['jeudi'])) {
+                    $jour="$jour jeudi";
+                }
+                if (isset($_POST['vendredi'])) {
+                    $jour="$jour vendredi";
+                }
+                if (isset($_POST['samedi'])) {
+                    $jour="$jour samedi";
+                }
+                if (isset($_POST['dimanche'])) {
+                    $jour="$jour dimanche";
+                }
+        
+                $heure="";
+                if (isset($_POST['9-12'])) {
+                    $heure="$heure 9h-12h";
+                }
+                if (isset($_POST['12-14'])) {
+                    $heure="$heure 12h-14h";
+                }
+                if (isset($_POST['14-18'])) {
+                    $heure="$heure 14h-18h";
+                }
+                if (isset($_POST['18-20'])) {
+                    $heure="$heure 18h-20h";
+                }
+        
+                
+                $message = '<h1>Message envoyé depuis la page Contact de avotreservicefrance.fr</h1>
+                <p><b>de la part de :</b> ' . $_POST['nom'] . '</p>
+                <p><b>Email : </b>' . $_POST['email'] . '</p>
+                <p><b>Téléphone : </b>' . $_POST['telephone'] . '</p>
+                <p><b>Préférence de rappel : </b>' . $jour . '</p>
+                <p><b>et heure : </b>' . $heure . '</p>
+                <b>Message : </b>' . htmlspecialchars($_POST['demande']) . '</p>';
+        
+                $retour = mail('contact@avotreservicefrance.fr', 'Demande à votre service France', $message, $entete);
+                if ($retour) {
+                    echo "<div class=\"alert alert-success alert-dismissible fade show\" role=\"alert\">Votre message a bien été envoyé
+                <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>
+                </div>";
+                }
+            }
+    ?>
+
 
     <div class="float-end p-3 card-container">
         <div class="card">
@@ -119,8 +182,15 @@
             Et, bien sûr, une facture vous sera remise à l’issue de notre collaboration.
         </p>
 
-        <!-- Si nous cultivons l'habitude de rendre service, notre désir de servir s'accroîtra sans cesse et contribuera non seulement à notre propre bonheur, mais aussi au bonheur du monde en général. 
-Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p>Si nous cultivons l'habitude de rendre service, notre désir de servir s'accroîtra sans cesse et contribuera non seulement à notre propre bonheur, mais aussi au bonheur du monde en général.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Citation de Gandhi - <cite title="Source Title">Les lettres à l'Ashram (1937)</cite>
+            </figcaption>
+        </figure>
+
 
     </div>
 
@@ -165,51 +235,12 @@ Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
         <button type="button" class="bouton" id="ButtonContactMe">Me laisser un message</button>
 
         <div id="formContact">
-            <?php
-            ini_set('display_errors', 1);
-            error_reporting(E_ALL);
-            ini_set("error_log","error_php.txt");
-                    if (isset($_POST['demande'])) {
-                        $entete  = 'MIME-Version: 1.0' . "\r\n";
-                        $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-                        $entete .= 'From: contact@avotreservicefrance.fr' . "\r\n";
-                        $entete .= 'Reply-to: ' . $_POST['email'];
-                
-                        $jour="";
-                        if (isset($_POST['lundi'])) $jour="$jour lundi";
-                        if (isset($_POST['mardi'])) $jour="$jour mardi";
-                        if (isset($_POST['mercredi'])) $jour="$jour mercredi";
-                        if (isset($_POST['jeudi'])) $jour="$jour jeudi";
-                        if (isset($_POST['vendredi'])) $jour="$jour vendredi";
-                        if (isset($_POST['samedi'])) $jour="$jour samedi";
-                        if (isset($_POST['dimanche'])) $jour="$jour dimanche";
-                
-                        $heure="";
-                        if (isset($_POST['9-12'])) $heure="$heure 9h-12h";
-                        if (isset($_POST['12-14'])) $heure="$heure 12h-14h";
-                        if (isset($_POST['14-18'])) $heure="$heure 14h-18h";
-                        if (isset($_POST['18-20'])) $heure="$heure 18h-20h";
-                
-                        
-                        $message = '<h1>Message envoyé depuis la page Contact de avotreservicefrance.fr</h1>
-                        <p><b>de la part de :</b> ' . $_POST['nom'] . '</p>
-                        <p><b>Email : </b>' . $_POST['email'] . '</p>
-                        <p><b>Téléphone : </b>' . $_POST['telephone'] . '</p>
-                        <p><b>Préférence de rappel : </b>' . $jour . '</p>
-                        <p><b>et heure : </b>' . $heure . '</p>
-                        <b>Message : </b>' . htmlspecialchars($_POST['demande']) . '</p>';
-                
-                        $retour = mail('stephtkd@yahoo.fr', 'Demande à votre service France', $message, $entete);
-                        if($retour)
-                            echo '<p>Votre message a bien été envoyé.</p>';
-                    }
-                    ?>
                 <form method="post">
                     <div class="row justify-content-md-center">
                         <div class="col-md-6">
                             <div class="mb-md-3">
                                 <label for="nom" class="form-label">Nom</label>
-                                <input type="text" minlength="3" class="form-control" id="nom" name="nom" aria-describedby="nomHelp">
+                                <input type="text" minlength="3" class="form-control" id="nom" name="nom" aria-describedby="nomHelp" required>
                                 <div id="nomHelp" class="form-text">Les données sont strictement confidentielles</div>
                             </div>
                             <div class="mb-3">
@@ -219,7 +250,7 @@ Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Adresse mail</label>
-                                <input type="email" class="form-control" id="email" name="email" aria-describedby="adresseHelp" placeholder="nom@exemple.com">
+                                <input type="email" class="form-control" id="email" name="email" aria-describedby="adresseHelp" placeholder="nom@exemple.com" required>
                                 <div id="adresseHelp" class="form-text">Utilisé pour vous contacter</div>
                             </div>
                         </div>
@@ -281,7 +312,7 @@ Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
                     <div class="row justify-content-md-center mt-2">
                         <div class="col-md-6">
                             <label for="demande" class="form-label">Objet de votre demande</label>
-                            <textarea class="form-control" id="demande" aria-describedby="demandeHelp" name="demande"></textarea>
+                            <textarea class="form-control" id="demande" aria-describedby="demandeHelp" name="demande" required></textarea>
                             <div id="demandeHelp" class="form-text">Décrivez votre besoin</div>
 
                             <button type="submit" class="bouton mt-2">Envoyer</button>
@@ -351,9 +382,6 @@ Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
         </button>
     </div>
 
-
-    <!-- <br>
-        <br> VOIR STYLE POUR PRESENTATION https://www.auxcaracteres.com/services -->
 
     <div class="container" id="tarifs">
         <h2>Tarifs</h2>
@@ -658,7 +686,6 @@ Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
     <div class="container" id="avis">
         <h2>Derniers avis</h2>
 
-
         <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -668,8 +695,8 @@ Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="6000">
-                    <div class="row justify-content-md-center">
-                        <div class="avis col-md-9">
+                    <div class="row justify-content-center">
+                        <div class="avis col-8 col-md-9">
                             De Pierre G.<br> "Suite à ma demande de lancer ma propre affaire en plomberie chauffagiste , vous avez étudié la validité de mon projet ,puis réaliser mon business plan demandé par ma banque (également me conseiller sur les
                             argumentaires à défendre auprès de mon banquier qui m'a félicité sur l'analyse de mon business plan)
                             <br> Vous avez réaliser le projet de mes statuts de SAS pour un coût plus que raisonnable ( vous savez par votre expérience quand on se lance qu'il faut minimiser les frais ) J' ai ainsi obtenu auprès de ma banque un prêt de
@@ -679,8 +706,8 @@ Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="6000">
-                    <div class="row justify-content-md-center">
-                        <div class="avis col-md-9">
+                    <div class="row justify-content-center">
+                        <div class="avis col-8 col-md-9">
                             De Carole S.<br> "Christian Paul merci de votre efficacité. En effet suite à mon hospitalisation importante ( AVC ) grâce à une amie je vous ai consulté et grâce à vos compétences vous avez en effet réussi à : Sur la gestion
                             de mon compte bancaire obtenir l annulation de prélèvements qui courait depuis longtemps auprès de ma banque tels que assurance d un scooter que je n avais plus depuis plus de 10 ans , assurance d un mobil-homme détruit depuis
                             plus de 8 ans , diverses assurances et autres prélévements y compris depuis BOUYGUES TELECOM ( percevez deux fois l'abonnement ) et autres ......ce qui a permis d'obtenir mensuellement une moins value de 275 euros<br> Vous
@@ -691,16 +718,16 @@ Citation de Gandhi ; Les lettres à l'Ashram (1937) -->
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="6000">
-                    <div class="row justify-content-md-center">
-                        <div class="avis col-md-9">
+                    <div class="row justify-content-center">
+                        <div class="avis col-8 col-md-9">
                             De Céline et Stéphane B.<br> "Merci Christian de nous avoir aidé à construire le Business Plan de notre future entreprise. Un vrai coup de pouce et une aide très précieuse lorsqu'on démarre dans l'entreprenariat et qu'on n'a
                             pas toutes les compétences dès le début. Nous referons appel à vous sans soucis.<br>Merci"
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="6000">
-                    <div class="row justify-content-md-center">
-                        <div class="avis col-md-9">
+                    <div class="row justify-content-center">
+                        <div class="avis col-8 col-md-9">
                             D'Isabelle et Francis H.<br> "Nous tenons Christian Paul à vous remercier du temps passé avec nous par votre "grande "écoute et vos conseils " perspicaces " alors que notre couple comme on dit " battez de l'aile" Vous nous
                             avez réussi à nous faire comprendre les raisons " personnelles " , nous parlez avec franchise pour notre bien et grâce à vous nous avons trouvé les solutions pas toujours facile surtout quand elles touchent au coeur du couple.
                             <br>Merci de votre compréhension"
