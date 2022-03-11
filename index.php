@@ -165,8 +165,9 @@
         <p>73 ans, retraité, ex directeur des relations humaines , de marketing et directeur juridique et financier</p>
         <p>Depuis me retraite, je mets en place des boutiques en ligne pour aider des producteurs locaux français 
             à se développer et à augmenter leur clientèle. La dernière en date : 
-            <a href="https://cosmectic.produitsfrance.fr">cosmectic.produitsfrance.fr</a>
-            <img src="./images/cosmetic-produits-france-logo.png" alt="Logo Cosmetic Produits France">
+            <a href="https://cosmectic.produitsfrance.fr">
+            <img src="./images/cosmetic-produits-france-logo-trans.png" alt="Logo Cosmetic Produits France">
+            (https://cosmectic.produitsfrance.fr)</a>
 
         </p>
         <p>
