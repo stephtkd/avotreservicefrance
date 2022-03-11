@@ -163,6 +163,12 @@
     <div class="container" id="presentation">
         <h2>Permettez-moi de me présenter</h2>
         <p>73 ans, retraité, ex directeur des relations humaines , de marketing et directeur juridique et financier</p>
+        <p>Depuis me retraite, je mets en place des boutiques en ligne pour aider des producteurs locaux français 
+            à se développer et à augmenter leur clientèle. La dernière en date : 
+            <a href="https://cosmectic.produitsfrance.fr">cosmectic.produitsfrance.fr</a>
+            <img src="./images/cosmetic-produits-france-logo.png" alt="Logo Cosmetic Produits France">
+
+        </p>
         <p>
             Je tiens à être votre interlocuteur privilégié et <span class="fw-bold">vous accompagner</span> dans vos démarches. Quelle que soit la prestation que vous retiendrez, je veillerais à vous assurer ma plus <span class="fw-bold">stricte confidentialité</span>            et à vous fournir un <span class="fw-bold">service de
                 qualité</span>.
