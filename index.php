@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <!-- Required meta tags -->
@@ -163,13 +163,6 @@
     <div class="container" id="presentation">
         <h2>Permettez-moi de me présenter</h2>
         <p>73 ans, retraité, ex directeur des relations humaines , de marketing et directeur juridique et financier</p>
-        <p>Depuis me retraite, je mets en place des boutiques en ligne pour aider des producteurs locaux français 
-            à se développer et à augmenter leur clientèle. La dernière en date : 
-            <a href="https://cosmectic.produitsfrance.fr">
-            <img src="./images/cosmetic-produits-france-logo-trans.png" alt="Logo Cosmetic Produits France">
-            (https://cosmectic.produitsfrance.fr)</a>
-
-        </p>
         <p>
             Je tiens à être votre interlocuteur privilégié et <span class="fw-bold">vous accompagner</span> dans vos démarches. Quelle que soit la prestation que vous retiendrez, je veillerais à vous assurer ma plus <span class="fw-bold">stricte confidentialité</span>            et à vous fournir un <span class="fw-bold">service de
                 qualité</span>.
@@ -533,7 +526,7 @@
         <h3>Aide à la gestion de vos finances</h3>
 
         <p>Bien sûr l'écrivain public vous aide sur la gestion de vos finances personnelles. Grâce à mon expérience d'ancien directeur financier, je vous aide à optimiser votre budget et vous permets de vous faire des <span class="fw-bold">économies
-                substantielle</span></p>
+                substantielles</span></p>
 
 
         <button type="button" class="bouton btn-top">
@@ -651,8 +644,8 @@
     <div class="container">
         <h3>Gérer et optimiser ses finances personnelles</h3>
         <p>
-            En qualité d'ex-directeur financier et juridique, je vous accompagne pour vos gérer et optimiser au mieux votre budget, vous permettant ainsi de faire plusieurs centaines d'Euros d'économie par mois.
-            <br>Gérer ses finances personnelles demande de l’attention, du temps et souvent des connaissances spécifiques pour en cerner tous les aspects. Un professionnels peut vous aider à gagner du temps et vous éviter de nombreuses erreurs qui peuvent
+            En qualité d'ex-directeur financier et juridique, je vous accompagne pour gérer et optimiser au mieux votre budget, vous permettant ainsi de faire plusieurs centaines d'Euros d'économie par mois.
+            <br>Gérer ses finances personnelles demande de l’attention, du temps et souvent des connaissances spécifiques pour en cerner tous les aspects. Un professionnel peut vous aider à gagner du temps et vous éviter de nombreuses erreurs qui peuvent
             s'avérer couteuses.
 
             <ul>
@@ -662,7 +655,7 @@
                 <li>trouver les meilleurs prix pour vos abonnements (électricité, gaz, forfaits internet, mobiles, ...) correspondants à vos besoins</li>
                 <li>vérification des remboursements santé (CPAM, ...) et des versements (CAF, chômage, retraite, ...)
                 </li>
-                <li>suivez vos comptes sur internet ou sur l'appli mobile de votre banque</li>
+                <li>suivre vos comptes sur internet ou sur l'appli mobile de votre banque</li>
                 <li>suivi de vos relevés bancaires</li>
                 <li>pointage et rapprochement de vos relevés bancaires avec vos tickets CB, vos talons de chèques
                 </li>
