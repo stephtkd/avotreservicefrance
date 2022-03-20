@@ -357,7 +357,7 @@
             </div>
 
             <div class="col-md-4 col-6 mt-3 ardoise-contenant delai-1">
-                <a href="#pour-tous" class="text-light lien-ardoise">
+                <a href="#recherche-emploi" class="text-light lien-ardoise">
                     <img src="./images/ardoisesm.png" alt="ardoise" class="ardoise-img">
                     <span class="texte-ardoise">ÉTUDIANTS -<br>RECHERCHE D'EMPLOI</span></a>
                 <!-- 350x240 -->
@@ -541,7 +541,7 @@
     </div>
     <div class="container">
         <p>
-            <h3>Pour les particuliers, les couples, les étudiants, en recherche d'emploi, ...</h3>
+            <h3>Pour les Femmes et Hommes Célibataires - Pour les couples</h3>
             En qualité d'ex-directeur des relations humaines, j'écris vos lettres et discours tout au long de votre vie sentimentale :
             <ul>
                 <li>fiançailles</li>
@@ -681,6 +681,46 @@
             </svg>
         </button>
     </div>
+
+    <div id="recherche-emploi" class="titre_rubrique">
+    <h2>Pour les personnes en recherche d'emploi</h2>
+    </div>
+
+    <div class="container">
+        <h3>Lettre de motivation et CV</h3>
+    <p>
+    Votre lettre de motivation et votre curriculum vitae sont le premier contact que l’entreprise a avec vous. 
+    Si ce contact est bon, vous serez convoqué à un entretien d’embauche. S’il n’est pas bon, votre courrier partira à la corbeille.
+    </p>
+    <p>
+    Grâce à mon expérience dans les Ressources humaines, je rédige votre CV et votre lettre de motivation pour mettre en valeur 
+    votre candidature, en adéquation avec votre profil et le poste visé.
+    </p>
+
+    <p>
+    Rédaction de lettres de motivation et CV pour :
+<ul>
+<li>Réponse à une offre d’emploi</li>
+    <li>Candidature spontanée</li>
+    <li>Demande de stage</li>
+    <li>Demande d’inscription en école</li>
+    <li>Demande de congé de formation</li>
+    <li>Relecture et correction de rapports de stage et de mémoires : orthographe, ponctuation, syntaxe…</li>
+</ul>
+
+Selon le cas, le curriculum vitae sera établi par compétences ou chronologiquement.
+
+    </p>
+
+    <button type="button" class="bouton btn-top">
+            <svg width="32" height="32">
+                <use xlink:href="#top" />
+            </svg>
+        </button>
+    
+    </div>
+
+
 
 
     <div class="container" id="avis">

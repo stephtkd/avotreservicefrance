@@ -242,6 +242,10 @@ figure {
     background-image: url("../images/student.jpg");
 }
 
+#recherche-emploi {
+    background-image: url("../images/student2.jpg");
+}
+
 .titre_rubrique {
     /* Set a specific height */
     height: 300px;
